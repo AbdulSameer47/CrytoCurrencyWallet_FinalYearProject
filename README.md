@@ -34,21 +34,17 @@ Hence providing security and ensuring a reliable transaction​
 
 # Step-By-Step instructions(DIY)
 
-1. If you don't have the software called "etcher" already installed in your computer, 
-download it here: https://etcher.io/. This software is used to write the program image to 
+1. download Etcher from here: https://etcher.io/. This software is used to write the program image to 
 the SD card.
-2. Download the latest pitrezor SD card image by clicking here and select "save" to save 
-the zip file
-3. Start etcher and follow the instructions. You will need to connect the SD card to your 
-computer to flash the pitrezor image file.
+2. Download the latest pitrezor SD card image by clicking here.
+3. Start etcher. You will need to connect the SD card to your computer to flash the pitrezor image file.
 4. After the card is flashed, put it in the SD card slot in the pi.
-5. Connect the USB cable in the USB port near the center of the pi, not the one near the 
+5. Connect the USB cable in the USB port near the center of the pi as shown above, not the one near the 
 corner. 
-6. Connect the other end of the USB cable to your computer or a USB power supply. You 
+6. Connect the USB cable to your computer or a USB power supply. You 
 should see the pi boot sequence in the monitor and after 4-5 seconds the trezor logo 
-should appear. Good! That confirms that your pi and SD card are working correctly.
-7. At this point you cannot do much, so disconnect the USB cable, HDMI adapter and 
-cable and remove SD card.
+should appear.
+7. Now disconnect the USB cable, HDMI adapter and cable and remove SD card.
 8. Solder the 2 buttons to the pi. The red button (called "no") is connected to the pins 30 
 and 32. The green button (called "yes") is connected to the pins 34 and 36. 
 9. Put back the SD card in the pi and reconnect the HDMI and USB cable back to your 
@@ -56,21 +52,19 @@ computer.
 10. Open a browser on your computer and navigate to https://wallet.trezor.io
 11. You will be requested to install the trezor bridge if you never did it before. Select your 
 operating system to download the correct bridge software and perform installation.
-12. If you installed the bridge, close and reopen your browser and go back to 
-https://wallet.trezor.io
-13. If the bridge is already installed, you should see a message that invites you to connect 
-your trezor. Connect the USB cable of your pi.27
-14. The browser application should detect the device and invite you to perform the trezor 
+12. If the bridge is already installed, you should see a message that invites you to connect 
+your trezor. Connect the USB cable of your pi.
+13. The browser application should detect the device and invite you to perform the trezor 
 setup.
-15. During the setup you will need the buttons to, at least, go from one seed word to another.
-16. If all is working correctly you can disconnect everything to solder the OLED display. 
+14. During the setup you will need the buttons to go from one seed word to another.
+15. If all is working correctly you can disconnect everything to solder the OLED display. 
 The I2C OLED display need 4 wires to solder and the SPI OLED uses 7 wires. 
-17. Connect the SD card back to your computer and refer to the configuration section below 
+16. Connect the SD card back to your computer and refer to the configuration section below 
 to correctly configure your OLED model and orientation. There are only 2 possible
 orientations so you can try both and see which one is better for you.
-18. Reconnect everything and retry your device. Now you should see the output on the 
+17. Reconnect everything and retry your device. Now you should see the output on the 
 OLED.
-19. If that work, put everything in a box and your good to go!
+18. If that work, put everything in a box and your good to go!
 
 ## Configuration
 If you connect the SD card in your computer you should see a file named "pitrezor.config" in 
